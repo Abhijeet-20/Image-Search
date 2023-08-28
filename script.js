@@ -1,4 +1,4 @@
-const form = document.getElementById("search");
+        const form = document.getElementById("search");
         const input = document.getElementById("input");
         const searchresult = document.getElementById("result");
         const morebtn = document.getElementById("more");
@@ -7,8 +7,7 @@ const form = document.getElementById("search");
         let keyword ="";
         let page = 1;
 
-        async function searchImg(){
-            
+        async function searchImg(){          
             keyword = input.value;
             const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=12`;
             
@@ -33,12 +32,10 @@ const form = document.getElementById("search");
                 imagelink.appendChild(image);
                 searchresult.appendChild(imagelink);
             });
-            morebtn.style.display="block";
-            
+            morebtn.style.display="block";    
         }
 
-        form.addEventListener("submit", (e)=>{
-            
+        form.addEventListener("submit", (e)=>{    
             e.preventDefault();
             page = 1;
             searchImg();

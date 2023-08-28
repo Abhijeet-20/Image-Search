@@ -1,17 +1,21 @@
-
 body{
     background-color: #101820FF;
 }
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1{
-    color: white;
     margin: 50px auto 20px;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-clip: border-box;
+    background: linear-gradient(135deg, rgb(0, 254, 186), rgb(91, 84, 138));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 }
 #search{
     background-color: transparent;
@@ -49,8 +53,9 @@ input[type=text]::placeholder{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
-    background-color: gray;
+    background: linear-gradient(135deg, rgb(0, 254, 186), rgb(91, 84, 138));
     color: white;
+    font-weight: 600;
 }
 #more{
     cursor: pointer;
@@ -60,6 +65,9 @@ input[type=text]::placeholder{
     border-radius: 10px;
     margin: 10px auto 100px;
     display: none;
+    background: linear-gradient(135deg, rgb(0, 254, 186), rgb(91, 84, 138));
+    color: #fff;
+    font-weight: 500;
 }
 #result{
     width: 100%;
@@ -68,5 +76,4 @@ input[type=text]::placeholder{
     align-items: top;
     justify-content: center;
     flex-wrap: wrap;
-
 }
